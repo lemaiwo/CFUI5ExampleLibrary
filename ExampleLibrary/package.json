@@ -1,0 +1,21 @@
+{
+    "name": "examplelibrary",
+    "version": "0.0.1",
+    "devDependencies": {
+        "@sap/di.code-validation.js": "1.1.6",
+        "@sap/di.code-validation.xml": "1.1.16",
+        "@ui5/cli": "1.14.0",
+        "grunt": "1.0.1",
+        "grunt-run": "0.8.1",
+        "bestzip": "2.1.4",
+        "rimraf": "3.0.2"
+    },
+    "scripts": {
+        "build": "npm run clean && ui5 build --include-task=generateManifestBundle generateCachebusterInfo && cp ./xs-app.json dist && cp ./src/manifest.json dist && npm run zip",
+        "zip": "cd dist && npx bestzip ../ExampleLibrary-content.zip *",
+        "clean": "npx rimraf ExampleLibrary-content.zip dist"
+    },
+    "dependencies": {
+        "@openui5/sap.ui.core": "1.52.*"
+    }
+}

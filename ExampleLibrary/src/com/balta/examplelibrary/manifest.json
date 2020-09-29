@@ -1,0 +1,56 @@
+{
+	"_version": "1.12.0",
+
+	"sap.app": {
+		"id": "com.balta.examplelibrary",
+		"type": "library",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "Demo Lib",
+		"description": "Demo Lib",
+		"ach": "",
+		"offline": true
+	},
+	"sap.cloud": {
+		"public": true,
+		"service": "com.balta.exampleLibrary"
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+
+	"sap.ui5": {
+		"dependencies": {
+			"minUI5Version": "1.52.0",
+			"libs": {
+				"sap.ui.core": {
+					"minUI5Version": "1.52.0"
+				}
+			}
+		},
+		"library": {
+			"i18n": "messagebundle.properties",
+			"css": true,
+			"content": {
+				"controls": ["com.balta.examplelibrary.Example"],
+				"elements": [],
+				"types": [],
+				"interfaces": []
+			}
+		}
+	}
+}
