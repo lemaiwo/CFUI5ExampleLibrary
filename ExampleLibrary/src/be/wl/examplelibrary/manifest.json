@@ -2,7 +2,7 @@
 	"_version": "1.12.0",
 
 	"sap.app": {
-		"id": "com.balta.examplelibrary",
+		"id": "be.wl.examplelibrary",
 		"type": "library",
 		"applicationVersion": {
 			"version": "1.0.0"
@@ -14,7 +14,7 @@
 	},
 	"sap.cloud": {
 		"public": true,
-		"service": "com.balta.exampleLibrary"
+		"service": "be.wl.exampleLibrary"
 	},
 	"sap.ui": {
 		"technology": "UI5",
@@ -46,7 +46,7 @@
 			"i18n": "messagebundle.properties",
 			"css": true,
 			"content": {
-				"controls": ["com.balta.examplelibrary.Example"],
+				"controls": ["be.wl.examplelibrary.Example"],
 				"elements": [],
 				"types": [],
 				"interfaces": []

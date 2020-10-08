@@ -3,7 +3,7 @@
  */
 
 /**
- * Initialization Code and shared classes of library com.balta.examplelibrary.
+ * Initialization Code and shared classes of library be.wl.examplelibrary.
  */
 sap.ui.define(["sap/ui/core/library"], // library dependency
 	function () {
@@ -14,7 +14,7 @@ sap.ui.define(["sap/ui/core/library"], // library dependency
 		 * Demo Lib
 		 *
 		 * @namespace
-		 * @name com.balta.examplelibrary
+		 * @name be.wl.examplelibrary
 		 * @author SAP SE
 		 * @version 1.0.0
 		 * @public
@@ -22,20 +22,20 @@ sap.ui.define(["sap/ui/core/library"], // library dependency
 
 		// delegate further initialization of this library to the Core
 		sap.ui.getCore().initLibrary({
-			name: "com.balta.examplelibrary",
+			name: "be.wl.examplelibrary",
 			version: "1.0.0",
 			dependencies: ["sap.ui.core"],
 			noLibraryCSS: true,
 			types: [],
 			interfaces: [],
 			controls: [
-				"com.balta.examplelibrary.controls.Example"
+				"be.wl.examplelibrary.controls.Example"
 			],
 			elements: []
 		});
 
 		/* eslint-disable */
-		return com.balta.examplelibrary;
+		return be.wl.examplelibrary;
 		/* eslint-enable */
 
 	}, /* bExport= */ false);

@@ -1,7 +1,7 @@
 /*!
  * ${copyright}
  */
-// Provides control com.balta.examplelibrary.Example.
+// Provides control be.wl.examplelibrary.Example.
 sap.ui.define([
 	"./../library", "sap/ui/core/Control", "./ExampleRenderer"
 ], function (library, Control, ExampleRenderer) {
@@ -22,12 +22,12 @@ sap.ui.define([
 	 *
 	 * @constructor
 	 * @public
-	 * @alias com.balta.examplelibrary.controls.Example
+	 * @alias be.wl.examplelibrary.controls.Example
 	 * @ui5-metamodel This control/element also will be described in the UI5 (legacy) designtime metamodel
 	 */
-	var Example = Control.extend("com.balta.examplelibrary.controls.Example", {
+	var Example = Control.extend("be.wl.examplelibrary.controls.Example", {
 		metadata: {
-			library: "com.balta.examplelibrary",
+			library: "be.wl.examplelibrary",
 			properties: {
 				/**
 				 * text
